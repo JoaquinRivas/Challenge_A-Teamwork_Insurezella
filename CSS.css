@@ -1,0 +1,306 @@
+﻿/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Barra superior */
+.top-bar {
+    background-color: #4d76f5;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header img {
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+}
+nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+.call-button {
+    background-color: #0030ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+    .call-button:hover {
+        background-color: #e36a1f;
+    }
+
+/* Sección principal */
+.introduction {
+    display:contents;
+    justify-content:space-between;
+}
+
+.introduction-title {
+    top: 0%;
+    text-align: justify;
+    left: 25%;
+    right: 75%;
+    color: #345cfb;
+    font-size: 20px;
+}
+
+.introduction-content {
+    text-align: justify;
+    width: 100%;
+    overflow: hidden;
+    background-color: #e1dde0;
+}
+
+.introduction img {
+    float: right; 
+    width: 800px; 
+}
+
+.introduction-text {
+    position: absolute;
+    top: 30%;
+    text-align: justify;
+    left: 15%;
+    right: 50%;
+    color: #6f6f6f;
+    font-size: inherit;
+}
+
+.button {
+    display: inline-block;
+    background-color: #03b0ff;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+    .button:hover {
+        background-color: #003693;
+    }
+
+/* Opciones de seguros */
+.insurance-options {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 10px 0px;
+}
+
+.option {
+    display: inline-block;
+    padding:30px 20px 30px;
+    box-shadow: 8px 8px 10px 8px rgba(193, 218, 247, 1);
+    text-align: center;
+    width: 10%;
+}
+
+    .option img {
+        width: 50px;
+    }
+
+    .option title {
+        margin-top: 10px;
+        font-size: 1.2em;
+    }
+
+/* Sección sobre la empresa */
+.information {
+    padding: 100px;
+    text-align: left;
+    margin-right: 400px;
+}
+
+    .information img {
+        float: left;
+        width: 500px;
+        margin-right: 100px;
+        margin-left: 200px;
+    }
+
+
+/* Opciones de seguros */
+.insurance-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 0 100px;
+    justify-items: center;
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left:200px;
+}
+
+.insurance-item {
+    text-align: center;
+}
+
+.insurance-information {
+    background-color: #ecf5ff;
+    color: #2083fd;
+    padding: 100px;
+}
+
+.insurance-information-cont{
+    color:grey;
+}
+
+.insurance-inf-title {
+    top: 0%;
+    text-align: center;
+    font-size: inherit;
+    color: black;
+}
+
+/*Información de planes*/
+.plans-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    margin-left: 300px;
+}
+
+.plans-item {
+    width:350px;
+}
+
+.plans-information {
+    margin-top: 100px;
+    padding: 100px;
+}
+
+.plans-item img {
+    width: 400px;
+    height: 250px;
+    margin-bottom: 15px;
+    margin-top:20px;
+}
+
+.plans-button {
+    display: inline-block;
+    color: #3f7cf7;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+/* Pie de página */
+footer {
+    box-shadow:  10px 8px 10px 6px rgba(0, 0, 0, 0.5);
+    text-align: justify;
+    width: 80%;
+    margin-left: 200px;
+    margin-bottom: 200px;
+    justify-content: space-between;
+}
+
+.footer-links img{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+}
+
+.footer-links cuote{
+    text-align:center;
+    width: 300px;
+}
+
+.footer-links div {
+    display:inline-grid;
+    width: 350px;
+    justify-items: left;
+}
+
+.footer-links h3 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    transition: color 0.3s;
+}
+
+    .footer-links a:hover {
+        color: #ff7b25;
+    }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .introduction {
+        flex-direction: column;
+        text-align: center;
+    }
+
+        .introduction img {
+            width: 80%;
+            margin-top: 20px;
+        }
+
+    .insurance-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .option {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .insurance-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 0 50px;
+    }
+
+
+    .insurance-container {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+}
